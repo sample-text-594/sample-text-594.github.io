@@ -20,7 +20,7 @@ window.onload = function() {
 	}
 
 	// WEBSOCKET CONFIGURATOR
-	game.global.socket = new WebSocket("ws://82.158.57.208:5000/game");
+	game.global.socket = new WebSocket("wss://82.158.57.208:5000/game");
 	
 	game.global.socket.onopen = () => {
 		if (game.global.DEBUG_MODE) {
